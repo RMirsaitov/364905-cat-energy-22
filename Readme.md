@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Ruslan Mirsaitov](https://up.htmlacademy.ru/adaptive/22/user/364905).
-* Наставник: `Неизвестно`.
+- Студент: [Ruslan Mirsaitov](https://up.htmlacademy.ru/adaptive/22/user/364905).
+- Наставник: `[Виктор Кан](https://htmlacademy.ru/profile/viktorkan)`.
 
 ---
 
