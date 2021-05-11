@@ -1,0 +1,139 @@
+.manual {
+  margin-bottom: 42px;
+}
+
+.manual__title {
+  margin: 0;
+  margin-bottom: 38px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.manual__list {
+  display: grid;
+  row-gap: 20px;
+  padding-left: 0;
+  margin: 0;
+  counter-reset: item;
+}
+
+.manual__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 80px;
+  font-family: "Arial", sans-serif;
+  min-height: 60px;
+  font-size: 14px;
+  line-height: 18px;
+  color: @special-grey;
+}
+
+.manual__item::before {
+  content: "";
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  top: 0;
+  left: 0;
+  background-color: @basic-green;
+}
+
+.manual__item-first::before {
+  background-image: url("../img/icon-leaf.svg");
+  background-size: 25px 28px;
+}
+
+.manual__item-second::before {
+  background-image: url("../img/icon-wash.svg");
+  background-size: 28px 31px;
+}
+
+.manual__item-third::before {
+  background-image: url("../img/icon-eat.svg");
+  background-size: 25px 30px;
+}
+
+.manual__item-fourth::before {
+  background-image: url("../img/icon-alarm.svg");
+  background-size: 25px 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .manual {
+    margin-bottom: 0;
+    border-bottom: 1px solid @basic-border-grey;
+  }
+
+  .manual__wrapper {
+    padding-bottom: 47px;
+  }
+
+  .manual__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  .manual__list {
+    grid-template-columns: repeat(2, 35%);
+    column-gap: 137px;
+    row-gap: 37px;
+  }
+
+  .manual__item {
+    align-items: flex-start;
+    min-height: 280px;
+    padding-bottom: 57px;
+    padding-top: 151px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 1;
+  }
+
+  .manual__item::before {
+    top: 40px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .manual__item::after {
+    content: counter(item);
+    counter-increment: item;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 136px;
+    height: 280px;
+    color: @basic-light-grey;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    line-height: 280px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .manual {
+    margin-bottom: 11px;
+    border-bottom: none;
+  }
+
+  .manual__wrapper {
+    padding-bottom: 0;
+  }
+
+  .manual__list {
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+  }
+}

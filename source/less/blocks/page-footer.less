@@ -1,19 +1,15 @@
 .page-footer {
+  background-color: @basic-light-grey;
+}
+
+.page-footer__wrapper {
   display: flex;
   flex-direction: column;
-  background-color: @basic-light-grey;
-
-  @media (min-width: @tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 55px;
-    padding-bottom: 61px;
-  }
 }
 
 .page-footer__logo {
   display: flex;
-  justify-content: center;
+  align-items: center;
   padding: 39px 0 32px;
   border-bottom: 1px solid @content-border-grey;
 
@@ -64,4 +60,13 @@
   font-size: 16px;
   line-height: 18px;
   color: @special-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 61px;
+  }
 }
