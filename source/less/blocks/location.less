@@ -1,17 +1,12 @@
+.location-content--bg-grey {
+  background-color: @basic-light-grey;
+}
+
 .location__info {
-  padding: 28px 20px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  @media (min-width: @desktop-width) {
-    position: absolute;
-    top: 95px;
-    left: 110px;
-    height: 201px;
-    width: 570px;
-    padding: 0;
-    background-color: @basic-white;
-  }
 }
 
 .location__invite {
@@ -43,7 +38,7 @@
 
 .location__map {
   border: none;
-  height: 362px;
+  min-height: 362px;
   width: 100%;
 }
 
@@ -55,10 +50,8 @@
   .location__info {
     display: flex;
     justify-content: space-between;
-    padding-top: 62px;
+    padding-top: 66px;
     padding-bottom: 51px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   .location__invite-text {
@@ -72,6 +65,18 @@
   }
 
   .location__map {
-    height: 400px;
+    min-height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location__info {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    min-height: 201px;
+    width: 570px;
+    padding: 0;
+    background-color: @basic-white;
   }
 }

@@ -3,7 +3,7 @@
   line-height: 20px;
   text-transform: uppercase;
   padding: 0;
-  margin: 0;
+  margin: 0 -20px;
 }
 
 .menu-nav__item {
@@ -14,6 +14,10 @@
   border-bottom: 1px solid @basic-border-grey;
   padding-top: 22px;
   padding-bottom: 24px;
+}
+
+.menu-nav__item:first-child {
+  border-top: 1px solid @basic-border-grey;
 }
 
 .menu-nav__link {
@@ -52,6 +56,10 @@
     padding-bottom: 8px;
   }
 
+  .menu-nav__item:first-child {
+    border-top: none;
+  }
+
   .menu-nav__item:not(:first-child) {
     margin-left: 33px;
   }
@@ -67,14 +75,14 @@
 }
 
 @media (min-width: @desktop-width) {
-  .menu-nav__link {
+  .page-header-index .menu-nav__link {
     font-size: 20px;
     line-height: 30px;
     color: @basic-white;
     z-index: 1;
   }
 
-  .menu-nav__item--current {
+  .page-header-index .menu-nav__item--current {
     border-color: @basic-white;
     z-index: 1;
   }

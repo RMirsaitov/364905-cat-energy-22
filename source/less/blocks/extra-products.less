@@ -1,0 +1,42 @@
+.extra-products {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.extra-products__title {
+  margin: 0;
+  margin-bottom: 36px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: @basic-black;
+}
+
+@media (min-width: @tablet-width) {
+  .extra-products {
+    padding-top: 0;
+  }
+
+  .extra-products__title {
+    margin-left: 37px;
+    margin-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-products {
+    padding-bottom: 86px;
+  }
+
+  .extra-products__title {
+    margin-left: 0;
+  }
+
+  .extra__products-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
