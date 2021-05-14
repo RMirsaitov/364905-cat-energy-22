@@ -1,0 +1,85 @@
+.product-banner {
+  position: relative;
+  background-image: url("../img/bg-order-m.jpg");
+  background-color: @basic-green;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-banner__text {
+  margin: 0;
+  width: 60%;
+  padding-top: 186px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: @basic-white;
+  text-align: center;
+}
+
+.product-banner__text::before {
+  content: "";
+  position: absolute;
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 78px;
+  height: 80px;
+  background-image: url("../img/icon-gift.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .product-banner {
+    margin: 0 auto;
+    max-width: 708px;
+    min-height: 200px;
+  }
+
+  .product-banner__text::before {
+    top: 50%;
+    margin-top: -40px;
+    left: 118px;
+    width: 80px;
+    height: 82px;
+  }
+
+  .product-banner__text {
+    width: 161px;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 124px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-banner {
+    margin: 0;
+    min-width: 245px;
+    min-height: 200px;
+  }
+
+  .product-banner__text::before {
+    top: 97px;
+    left: 50%;
+    width: 80px;
+    height: 82px;
+  }
+
+  .product-banner__text {
+    padding: 0;
+    padding-top: 184px;
+    margin: 0 auto;
+  }
+}

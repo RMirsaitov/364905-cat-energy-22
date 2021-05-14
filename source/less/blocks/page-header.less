@@ -1,23 +1,61 @@
-.page-header__logo-link {
-  display: block;
-}
-
-.page-header__logo {
-  width: 190px;
-  height: 38px;
-}
-
-.page-header__content {
+.page-header__link {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 12px 20px 17px;
-  border-bottom: 1px solid @basic-border-grey;
+  padding-top: 12px;
+  padding-bottom: 16px;
 }
 
-.page-header__toggle {
-  width: 18px;
+.page-header__logo-title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 101px;
   height: 18px;
-  background-color: transparent;
-  cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    margin-bottom: 0;
+  }
+
+  .page-header__link {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .page-header__logo-title {
+    display: none;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header-index {
+    position: relative;
+    margin-bottom: 82px;
+  }
+
+  .page-header-index::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    background-image: url("../img/promo-desktop.png");
+    background-color: @basic-green;
+    background-repeat: no-repeat;
+    background-size: 720px 696px, 100%;
+    background-position: right;
+  }
+
+  .page-header__wrapper {
+    padding-top: 55px;
+    padding-right: 0;
+  }
 }

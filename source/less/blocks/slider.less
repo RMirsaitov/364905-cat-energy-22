@@ -1,0 +1,140 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider__images {
+  position: relative;
+  margin-bottom: 23px;
+  width: 320px;
+  min-height: 240px;
+}
+
+.slider__image {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 320px;
+}
+
+.slider__image img {
+  max-width: 320px;
+  max-height: 240px;
+  object-fit: contain;
+}
+
+.slider__image--before {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  left: 0;
+  background-color: @basic-smoky-grey;
+}
+
+.slider__image--after {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 0;
+  right: 0;
+  background-color: @basic-smoky-grey;
+}
+
+.slider__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 228px;
+  height: 40px;
+}
+
+.slider__scale {
+  display: flex;
+  align-items: center;
+  min-width: 84px;
+  height: 14px;
+  background-color: @basic-white;
+  border: 1px solid @basic-dark-grey;
+  border-radius: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.slider__toggle {
+  min-width: 35px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: @basic-green;
+}
+
+.slider__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @basic-black;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .slider {
+    margin: 0 -30px;
+    background-image: linear-gradient(@basic-white 0, @basic-white 180px, @basic-smoky-grey 180px, @basic-smoky-grey 100%);
+    overflow: hidden;
+    min-height: 612px;
+    justify-content: flex-end;
+    padding-bottom: 33px;
+  }
+
+  .slider__images {
+    width: 708px;
+    min-height: 612px;
+  }
+
+  .slider__image {
+    background-color: transparent;
+    width: 708px;
+  }
+
+  .slider__image img {
+    max-width: 708px;
+    max-height: 612px;
+  }
+
+  .slider__image--before {
+    width: 50%;
+  }
+
+  .slider__image--after {
+    width: 50%;
+  }
+
+  .slider__label {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted @basic-black-shadow;
+  }
+
+  .slider__scale {
+    width: 428px;
+    height: 6px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: @toggle-background-gray;
+  }
+
+  .slider__toggle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-image: radial-gradient(@basic-green 0, @basic-green 4px, @basic-white 5px, @basic-white 100%);
+    margin-left: calc(50% - 17px);
+    border: 1px solid @basic-dark-grey;
+  }
+}

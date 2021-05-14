@@ -1,15 +1,20 @@
-.location {
-  &--grey-bg {
-    background-color: @basic-light-grey;
-  }
+.location-content--bg-grey {
+  background-color: @basic-light-grey;
 }
 
 .location__info {
-  padding: 28px 20px;
-  display: flex;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.location__welcome-text {
+.location__invite {
+  align-self: center;
+}
+
+.location__invite-text {
+  margin: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -18,8 +23,11 @@
   color: @special-black;
 }
 
+.location__address {
+  align-self: center;
+}
+
 .location__address-text {
-  margin: 0;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -30,4 +38,45 @@
 
 .location__map {
   border: none;
+  min-height: 362px;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .location {
+    position: relative;
+  }
+
+  .location__info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 66px;
+    padding-bottom: 51px;
+  }
+
+  .location__invite-text {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .location__address-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .location__map {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location__info {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    min-height: 201px;
+    width: 570px;
+    padding: 0;
+    background-color: @basic-white;
+  }
 }

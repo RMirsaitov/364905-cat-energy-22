@@ -1,0 +1,159 @@
+.example {
+  background-color: @basic-smoky-grey;
+}
+
+.example__wrapper {
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.example__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: @basic-black;
+  margin-bottom: 33px;
+}
+
+.example__description {
+  margin-bottom: 42px;
+}
+
+.example__story {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: @special-grey;
+}
+
+.example__achievements {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.example__achievement {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  min-height: 56px;
+  border: 1px solid @basic-dark-grey;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.example__value {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: @basic-black;
+}
+
+.example__meaning {
+  position: absolute;
+  left: auto;
+  right: auto;
+  bottom: 0;
+  transform: translateY(50%);
+  max-width: 70%;
+}
+
+.example__meaning-text {
+  display: inline-flex;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  color: @special-grey;
+  background-color: @basic-smoky-grey;
+}
+
+.example__meaning-text::before,
+.example__meaning-text::after {
+  content: "";
+  margin-left: 10px;
+}
+
+.example__sum {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic-black;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background: none;
+  }
+
+  .example__wrapper {
+    padding-bottom: 0;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__story {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  .example__data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 67px;
+  }
+
+  .example__achievements {
+    margin-bottom: 0;
+    min-width: 51.6%;
+  }
+
+  .example__achievement {
+    min-width: 162px;
+  }
+
+  .example__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__description {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__meaning-text {
+
+    background-color: @basic-white;
+  }
+
+  .example__sum {
+    display: inline-flex;
+    align-items: center;
+    width: 25%;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+}
