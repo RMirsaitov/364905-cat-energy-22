@@ -3,7 +3,7 @@
   line-height: 20px;
   text-transform: uppercase;
   padding: 0;
-  margin: 0 -20px;
+  margin: 0;
 }
 
 .menu-nav__item {
@@ -38,6 +38,7 @@
 @media (min-width: @tablet-width) {
   .menu-nav {
     display: flex;
+    min-height: 36px;
   }
 
   .menu-nav__toggle {
@@ -51,9 +52,10 @@
   }
 
   .menu-nav__item {
+    display: flex;
+    align-items: center;
+    padding: 0;
     border-bottom: none;
-    padding-top: 10px;
-    padding-bottom: 8px;
   }
 
   .menu-nav__item:first-child {
