@@ -100,16 +100,19 @@
 
 @media (min-width: @tablet-width) {
   .example {
-    background: none;
+    background-image: linear-gradient(@basic-white 0, @basic-white 620px, @basic-smoky-grey 620px, @basic-smoky-grey 100%);
+    overflow: hidden;
   }
 
   .example__wrapper {
+    padding-top: 43px;
     padding-bottom: 0;
   }
 
   .example__title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 63px;
   }
 
   .example__story {
@@ -126,6 +129,7 @@
 
   .example__achievements {
     margin-bottom: 0;
+    min-height: 72px;
     min-width: 51.6%;
   }
 
@@ -143,8 +147,13 @@
     line-height: 14px;
   }
 
-  .example__meaning-text {
+  .example__meaning {
+    max-width: 90%;
+  }
 
+  .example__meaning-text {
+    font-size: 14px;
+    line-height: 14px;
     background-color: @basic-white;
   }
 
@@ -155,5 +164,24 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    background-image: linear-gradient(@basic-white 0, @basic-white 194px, @basic-smoky-grey 194px, @basic-smoky-grey 100%);
+    overflow: hidden;
+  }
+
+  .example__wrapper {
+    padding-top: 58px;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+  }
+
+  .example__meaning-text {
+    background-color: @basic-smoky-grey;
   }
 }

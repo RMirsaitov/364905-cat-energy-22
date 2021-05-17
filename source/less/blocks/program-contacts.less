@@ -1,27 +1,30 @@
 .program-contacts {
   padding-top: 26px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 23px;
 }
 
 .program-contacts__title {
   margin: 0;
+  padding: 0;
   margin-bottom: 35px;
+  width: 66.78%;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
 }
 
-.program-contacts__info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.program-contacts__list {
+  display: grid;
+  grid-row-gap: 14px;
 }
 
-.program-contacts__info:first-of-type {
-  margin-bottom: 14px;
+.program-contacts__item {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 45px;
 }
 
 .program-contacts__label {
@@ -33,10 +36,17 @@
   color: @special-grey;
 }
 
+.program-contacts__label-email {
+  margin-right: 11px;
+}
+
+.program-contacts__label-tel {
+  margin-right: 8px;
+}
+
 .program-contacts__input {
-  height: 45px;
-  padding-left: 15px;
-  padding-right: 15px;
+  min-height: 45px;
+  padding: 0 68px 0 15px;
   border: 1px solid @basic-dark-grey;
   font-family: inherit;
   font-style: normal;
@@ -45,12 +55,65 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special-grey;
+  flex-grow: 1;
 }
 
-.program-contacts__input-email {
-  width: 219px;
+@media (min-width: @tablet-width) {
+  .program-contacts {
+    padding-top: 0;
+    margin-bottom: 65px;
+    padding-left: 40px;
+    padding-right: 35px;
+  }
+
+  .program-contacts__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+    width: 100%;
+  }
+
+  .program-contacts__item {
+    min-height: 52px;
+  }
+
+  .program-contacts__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .program-contacts__label-email {
+    margin-right: 18px;
+  }
+
+  .program-contacts__label-tel {
+    margin-right: 14px;
+  }
+
+  .program-contacts__input {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 42px 0 21px;
+    min-height: 52px;
+  }
 }
 
-.program-contacts__input-tel {
-  width: 204px;
+@media (min-width: @desktop-width) {
+  .program-contacts {
+    padding: 0;
+    margin-bottom: 69px;
+  }
+
+  .program-contacts__list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+
+  .program-contacts__label-email {
+    margin-right: 20px;
+  }
+
+  .program-contacts__label-tel {
+    margin-right: 15px;
+  }
 }

@@ -1,16 +1,6 @@
-.program {
+.program__wrapper {
   padding-top: 27px;
   padding-bottom: 32px;
-}
-
-.program__heading {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.program__form {
-  display: flex;
-  flex-direction: column;
 }
 
 .program__title {
@@ -21,11 +11,11 @@
   font-size: 36px;
   line-height: 36px;
   color: @basic-black;
-  text-align-last: left;
 }
 
 .program__text {
   margin: 0;
+  width: 80.7%;
   margin-bottom: 39px;
   font-style: normal;
   font-weight: 400;
@@ -35,10 +25,14 @@
   color: @basic-black;
 }
 
+.program__form {
+  padding: 0;
+}
+
 .program__button {
   margin-bottom: 21px;
-  width: 280px;
-  height: 40px;
+  width: 100%;
+  min-height: 40px;
   background-color: @basic-green;
   font-family: inherit;
   font-style: normal;
@@ -50,10 +44,102 @@
 }
 
 .program__note {
+  margin: 0;
+  text-align: center;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: @basic-black;
+}
+
+.program__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.program__list {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .program__wrapper {
+    padding-top: 65px;
+    padding-bottom: 85px;
+  }
+
+  .program__main-data {
+    padding-left: 41px;
+    padding-right: 37px;
+    margin-bottom: 75px;
+  }
+
+  .program__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+    padding-left: 39px;
+  }
+
+  .program__text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    width: 56.86%;
+    padding-left: 40px;
+  }
+
+  .program__submit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column-gap: 60px;
+    padding: 0 41px;
+  }
+
+  .program__button {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program__wrapper {
+    padding-top: 73px;
+    padding-bottom: 82px;
+  }
+
+  .program__title,
+  .program__text,
+  .program__main-data {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .program__title {
+    margin-bottom: 54px;
+  }
+
+  .program__text {
+    width: 26.4%;
+    margin-bottom: 66px;
+  }
+
+  .program__main-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    margin-bottom: 69px;
+  }
+
+  .program__submit {
+    padding: 0;
+    grid-column-gap: 80px;
+  }
+
+  .program__note {
+    text-align: left;
+  }
 }

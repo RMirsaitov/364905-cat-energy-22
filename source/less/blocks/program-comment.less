@@ -1,12 +1,10 @@
 .program-comment {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 27px;
+  padding-bottom: 23px;
 }
 
 .program-comment__title {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -15,11 +13,10 @@
 }
 
 .program-comment__text {
-  width: 280px;
-  height: 150px;
+  width: 100%;
+  min-height: 150px;
   border: 1px solid @basic-input-border;
-  padding-top: 10px;
-  padding-left: 15px;
+  padding: 10px 12px 10px 15px;
   padding-right: 12px;
   font-family: inherit;
   font-style: normal;
@@ -28,4 +25,33 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .program-comment {
+    padding-left: 40px;
+    padding-right: 37px;
+    padding-bottom: 0;
+    margin-bottom: 65px;
+  }
+
+  .program-comment__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .program-comment__text {
+    padding: 10px 19px;
+    min-height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-comment {
+    padding: 0;
+    margin-bottom: 67px;
+  }
 }

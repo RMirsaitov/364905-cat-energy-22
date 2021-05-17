@@ -5,34 +5,31 @@
 .location__info {
   padding-top: 28px;
   padding-bottom: 28px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 
 .location__invite {
-  align-self: center;
-}
-
-.location__invite-text {
   margin: 0;
   font-style: normal;
   font-weight: 400;
+  width: 88.5%;
+  margin-right: auto;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @special-black;
+  vertical-align: middle;
 }
 
 .location__address {
-  align-self: center;
-}
-
-.location__address-text {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  width: 100%;
+  margin-left: auto;
   color: @special-grey;
 }
 
@@ -43,25 +40,29 @@
 }
 
 @media (min-width: @tablet-width) {
-  .location {
-    position: relative;
-  }
-
   .location__info {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 66px;
-    padding-bottom: 51px;
+    padding: 66px 41px 51px 41px;
   }
 
-  .location__invite-text {
+  .location__invite {
+    margin: 0;
     font-size: 20px;
     line-height: 21px;
+    max-width: 175px;
   }
 
-  .location__address-text {
+  .location__address {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
     font-size: 16px;
     line-height: 20px;
+    max-width: 160px;
+  }
+
+  .location__address .location__address-city {
+    margin-top: 15px;
   }
 
   .location__map {
@@ -70,13 +71,23 @@
 }
 
 @media (min-width: @desktop-width) {
+  .location {
+    position: relative;
+  }
+
   .location__info {
     position: absolute;
+    display: flex;
+    justify-content: space-between;
     top: 95px;
     left: 110px;
     min-height: 201px;
     width: 570px;
-    padding: 0;
     background-color: @basic-white;
+    padding: 62px 89px 51px 76px;
+  }
+
+  .location__address {
+    text-align: start;
   }
 }
