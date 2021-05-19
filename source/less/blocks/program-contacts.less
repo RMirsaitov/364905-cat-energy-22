@@ -5,13 +5,33 @@
 
 .program-contacts__title {
   margin: 0;
-  padding: 0;
+  width: auto;
   margin-bottom: 35px;
-  width: 66.78%;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  padding-right: 14px;
+  background-color: @basic-white;
+}
+
+.program-contacts__subtitle {
+  display: block;
+}
+
+.program-contacts__title::after {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0.6em;
+  left: 100%;
+  width: 100vw;
+  height: 2px;
+  background-color: @basic-green;
 }
 
 .program-contacts__list {
@@ -20,11 +40,28 @@
 }
 
 .program-contacts__item {
+  position: relative;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 45px;
+  min-height: @input-mobile-height;
+}
+
+.program-contacts__icon-email {
+  position: absolute;
+  width: @icon-email-width;
+  height: @icon-email-height;
+  top: calc((@input-mobile-height - @icon-email-height) / 2);
+  right: 16px;
+}
+
+.program-contacts__icon-tel {
+  position: absolute;
+  width: @icon-tel-size;
+  height: @icon-tel-size;
+  top: calc((@input-mobile-height - @icon-tel-size) / 2);
+  right: 13px;
 }
 
 .program-contacts__label {
@@ -45,8 +82,8 @@
 }
 
 .program-contacts__input {
-  min-height: 45px;
-  padding: 0 68px 0 15px;
+  min-height: @input-mobile-height;
+  padding: 0 50px 0 15px;
   border: 1px solid @basic-dark-grey;
   font-family: inherit;
   font-style: normal;
@@ -70,11 +107,28 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
-    width: 100%;
+    padding-left: 39px;
+    padding-right: 42px;
+  }
+
+  .program-contacts__subtitle {
+    display: inline;
+  }
+
+  .program-contacts__title::before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0.6em;
+    right: 100%;
+    width: 100vw;
+    height: 2px;
+    background-color: @basic-green;
   }
 
   .program-contacts__item {
-    min-height: 52px;
+    min-height: @input-tablet-height;
   }
 
   .program-contacts__label {
@@ -94,7 +148,17 @@
     font-size: 20px;
     line-height: 30px;
     padding: 0 42px 0 21px;
-    min-height: 52px;
+    min-height: @input-tablet-height;
+  }
+
+  .program-contacts__icon-email {
+    top: calc((@input-tablet-height - @icon-email-height) / 2);
+    right: 19.47px;
+  }
+
+  .program-contacts__icon-tel {
+    top: calc((@input-tablet-height - @icon-tel-size) / 2);
+    right: 17px;
   }
 }
 
@@ -102,6 +166,11 @@
   .program-contacts {
     padding: 0;
     margin-bottom: 69px;
+  }
+
+  .program-contacts__title {
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .program-contacts__list {

@@ -10,6 +10,23 @@
   font-size: 24px;
   line-height: 26px;
   color: @basic-black;
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  padding-right: 23px;
+  background-color: @basic-white;
+}
+
+.program-goods__title::after {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0.6em;
+  left: 100%;
+  width: 100vw;
+  height: 2px;
+  background-color: @basic-green;
 }
 
 .program-goods__list {
@@ -71,6 +88,20 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 57px;
+    padding-left: 40px;
+    padding-right: 41px;
+  }
+
+  .program-goods__title::before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0.6em;
+    right: 100%;
+    width: 100vw;
+    height: 2px;
+    background-color: @basic-green;
   }
 
   .program-goods__list {

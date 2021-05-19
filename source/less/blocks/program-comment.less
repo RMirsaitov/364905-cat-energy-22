@@ -10,6 +10,23 @@
   font-size: 24px;
   line-height: 26px;
   color: @basic-black;
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  padding-right: 22px;
+  background-color: @basic-white;
+}
+
+.program-comment__title::after {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0.6em;
+  left: 100%;
+  width: 100vw;
+  height: 2px;
+  background-color: @basic-green;
 }
 
 .program-comment__text {
@@ -39,6 +56,20 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+    padding-right: 38px;
+    padding-left: 39px;
+  }
+
+  .program-comment__title::before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0.6em;
+    right: 100%;
+    width: 100vw;
+    height: 2px;
+    background-color: @basic-green;
   }
 
   .program-comment__text {
@@ -53,5 +84,10 @@
   .program-comment {
     padding: 0;
     margin-bottom: 67px;
+  }
+
+  .program-comment__title {
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }

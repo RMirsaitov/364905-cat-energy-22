@@ -1,6 +1,28 @@
 .program-options {
+  position: relative;
   padding: 22px 0 20px;
-  border-bottom: 1px solid @basic-input-border;
+}
+
+.program-options::before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  height: 1px;
+  background-color: @content-border-grey;
+}
+
+.program-options::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 100vw;
+  height: 1px;
+  background-color: @content-border-grey;
 }
 
 .program-options__list {
@@ -64,6 +86,11 @@
   .program-options {
     padding: 25px 28px;
     border: 1px solid @basic-input-border;
+  }
+
+  .program-options::before,
+  .program-options::after {
+    display: none;
   }
 
   .program-options__item {
