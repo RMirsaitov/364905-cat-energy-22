@@ -7,6 +7,10 @@
   padding-bottom: 25px;
 }
 
+.example__heading {
+  margin-bottom: 33px;
+}
+
 .example__title {
   margin: 0;
   font-style: normal;
@@ -14,7 +18,6 @@
   font-size: 36px;
   line-height: 40px;
   color: @basic-black;
-  margin-bottom: 33px;
 }
 
 .example__description {
@@ -87,7 +90,7 @@
   margin-left: 10px;
 }
 
-.example__sum {
+.example__cost {
   margin: 0;
   font-style: normal;
   font-weight: 400;
@@ -100,8 +103,7 @@
 
 @media (min-width: @tablet-width) {
   .example {
-    background-image: linear-gradient(@basic-white 0, @basic-white 620px, @basic-smoky-grey 620px, @basic-smoky-grey 100%);
-    overflow: hidden;
+    background: none;
   }
 
   .example__wrapper {
@@ -109,10 +111,13 @@
     padding-bottom: 0;
   }
 
+  .example__heading {
+    margin-bottom: 63px;
+  }
+
   .example__title {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 63px;
   }
 
   .example__story {
@@ -124,7 +129,6 @@
   .example__data {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 67px;
   }
 
   .example__achievements {
@@ -145,6 +149,7 @@
   .example__description {
     font-size: 14px;
     line-height: 14px;
+    margin-bottom: 67px;
   }
 
   .example__meaning {
@@ -157,31 +162,87 @@
     background-color: @basic-white;
   }
 
-  .example__sum {
-    display: inline-flex;
-    align-items: center;
-    width: 25%;
+  .example__cost {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
   }
 }
 
+.example__cost-text {
+  margin-bottom: 9px;
+}
+
 @media (min-width: @desktop-width) {
   .example {
-    background-image: linear-gradient(@basic-white 0, @basic-white 194px, @basic-smoky-grey 194px, @basic-smoky-grey 100%);
-    overflow: hidden;
+    background-image: linear-gradient(to bottom, @basic-white, @basic-white 194px, @basic-light-grey 194px, @basic-light-grey);
+  }
+
+  .example .container {
+    padding-right: 70px;
   }
 
   .example__wrapper {
-    padding-top: 58px;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr;
+    column-gap: 134px;
+    padding-bottom: 64px;
   }
 
-  .example__title {
+  .example__heading {
+    margin-top: 58px;
     margin-bottom: 146px;
   }
 
   .example__meaning-text {
-    background-color: @basic-smoky-grey;
+    background-color: @basic-light-grey;
+  }
+
+  .example__description {
+    margin-bottom: 0;
+    min-width: 436px;
+  }
+
+  .example__story {
+    margin-bottom: 69px;
+  }
+
+  .example__data {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example__achievements {
+    justify-content: flex-start;
+  }
+
+  .example__achievement {
+    max-width: 162px;
+  }
+
+  .example__achievement:last-child {
+    margin-left: 42px;
+  }
+
+  .example__cost {
+    margin-top: 60px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .example__meaning {
+    max-width: 92%;
+  }
+
+  .example__cost-text {
+    margin-bottom: 0;
+    margin-right: 63px;
   }
 }
