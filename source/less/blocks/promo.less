@@ -1,11 +1,16 @@
 .promo {
   background-color: @background-green-mobile;
-  background-image: url("../img/promo-mobile.jpg"), linear-gradient(180deg, @background-green-mobile 305px, @basic-white 305px);
+  background-image: url("../img/raster/promo-mobile-desktop@1x.jpg"), linear-gradient(180deg, @background-green-mobile 305px, @basic-white 305px);
   background-repeat: no-repeat;
-  background-size: 320px 305px, 100%;
+  background-size: 320px 302px, 100%;
   background-position: top center;
   text-align: center;
   min-height: 302px;
+
+  @media @retina {
+    background-image: url("../img/raster/promo-mobile-desktop@2x.jpg"), linear-gradient(180deg, @background-green-mobile 305px, @basic-white 305px);
+    background-size: 320px 302px, 100%;
+  }
 }
 
 .promo__wrapper {

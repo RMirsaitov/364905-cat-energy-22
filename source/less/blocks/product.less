@@ -2,7 +2,6 @@
   position: relative;
   padding-top: 19px;
   padding-bottom: 25px;
-  /*border-top: 1px solid @basic-grey;*/
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -54,6 +53,7 @@
 
 .product__img {
   display: block;
+  object-fit: contain;
 }
 
 .product__table {
@@ -103,6 +103,11 @@
     max-width: 324px;
     border-top: none;
     grid-row-gap: 34px;
+  }
+
+  .product__img {
+    width: auto;
+    height: auto;
   }
 
   .product::after,

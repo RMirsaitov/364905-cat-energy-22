@@ -1,5 +1,4 @@
 //Colors
-
 @outside-background-color: #e5e5e5;
 @basic-white: #ffffff;
 @basic-green: #68b738;
@@ -40,11 +39,14 @@
 @checkbox-mark-width: 18px;
 @checkbox-mark-height: 14px;
 
-
 // Viewports
-
 @mobile-width: 320px;
 @tablet-width: 768px;
 @desktop-width: 1440px;
 @mobile-width-container: 640px;
 @tablet-width-container: 1100px;
+
+// Retina
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+@retina: ~"(min-resolution: @{retina-dpi}), (min-resolution: @{retina-dppx})";
