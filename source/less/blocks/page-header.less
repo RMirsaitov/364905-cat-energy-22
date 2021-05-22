@@ -68,13 +68,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header-index {
+  .page-header--index {
     position: relative;
     margin-bottom: 82px;
     min-height: 696px;
   }
 
-  .page-header-index .page-header__wrapper {
+  .page-header--index .page-header__wrapper {
     padding-bottom: 32px;
   }
 
@@ -84,7 +84,7 @@
     padding-right: 110px;
   }
 
-  .page-header-index::before {
+  .page-header--index::before {
     position: absolute;
     content: "";
     top: 0;
@@ -92,10 +92,17 @@
     right: 0;
     left: 50%;
     height: 696px;
-    background-image: url("../img/promo-desktop.png");
+    background-image: url("../img/raster/index-background-desktop@1x.jpg");
     background-color: @background-color-desktop;
     background-repeat: no-repeat;
-    background-size: 720px 696px, 100%;
+    background-size: image-size("../img/raster/index-background-desktop@1x.jpg"), 100%;
     background-position: right;
+  }
+}
+
+@media @retina {
+  .page-header--index::before {
+    background-image: url("../img/raster/index-background-desktop@2x.jpg");
+    background-size: image-size("../img/raster/index-background-desktop@1x.jpg"), 100%;
   }
 }
