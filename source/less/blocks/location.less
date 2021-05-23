@@ -4,7 +4,8 @@
 
 .location__info {
   padding-top: 28px;
-  padding-bottom: 28px;
+  padding-bottom: 24px;
+  min-height: 114px;
   display: flex;
   justify-content: space-between;
 }
@@ -16,10 +17,9 @@
   width: 88.5%;
   margin-right: auto;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 21px;
   text-transform: uppercase;
   color: @special-black;
-  vertical-align: middle;
 }
 
 .location__address {
@@ -29,14 +29,36 @@
   font-size: 14px;
   line-height: 20px;
   width: 100%;
-  margin-left: auto;
+  margin-left: 15px;
   color: @special-grey;
 }
 
+.location__nav-map {
+  position: relative;
+  min-height: auto;
+  width: auto;
+}
+
 .location__map {
-  border: none;
   min-height: 362px;
   width: 100%;
+  border: none;
+}
+
+.location__nav-map::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 170px;
+  left: 50%;
+  width: 58px;
+  height: 55px;
+  margin-left: -29px;
+  background-image: url("../img/raster/map-pin.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  z-index: 1;
 }
 
 @media (min-width: @tablet-width) {
@@ -68,6 +90,13 @@
   .location__map {
     min-height: 400px;
   }
+
+  .location__nav-map::before {
+    width: 114px;
+    height: 106px;
+    margin-left: -53px;
+    bottom: 148px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -85,9 +114,16 @@
     width: 570px;
     background-color: @basic-white;
     padding: 62px 89px 51px 76px;
+    z-index: 2;
   }
 
   .location__address {
     text-align: start;
+  }
+
+  .location__nav-map::before {
+    top: 131px;
+    right: -419px;
+    bottom: 163px;
   }
 }
