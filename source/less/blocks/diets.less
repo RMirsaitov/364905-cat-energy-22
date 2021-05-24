@@ -86,23 +86,32 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @basic-black;
-  padding-right: 48px;
+  padding-right: 49px;
 }
 
 .diet__link::after {
+  content: "";
   position: absolute;
   top: 50%;
-  right: 8px;
-  display: block;
-  width: 24px;
-  height: 12px;
-  content: "";
-  background-image: url("../img/vector/icon-short-arrow.svg");
-  background-repeat: no-repeat;
-  background-size: 24px 12px, 100%;
-  background-position: right center;
+  right: 0;
   transform: translateY(-50%);
-  transition: all 0.3s;
+  width: 24px;
+  height: 10px;
+  background-image: url("../img/vector/icon-short-arrow.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.1s linear;
+}
+
+.diet__link:hover::after {
+  background-image: url("../img/vector/icon-long-arrow.svg");
+  width: 32px;
+  right: -9px;
+}
+
+.diet__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -119,10 +128,19 @@
   }
 
   .diet__item {
+    min-height: 372px;
     padding-top: 76px;
     padding-left: 52px;
     padding-bottom: 52px;
     padding-right: 62px;
+  }
+
+  .diet__item:first-of-type .diet__text {
+    max-width: 64%;
+  }
+
+  .diet__item:last-of-type .diet__text {
+    max-width: 58%;
   }
 
   .diet__content::before {
@@ -166,11 +184,17 @@
     border-bottom: none;
     font-size: 16px;
     line-height: 24px;
-    max-width: 62%;
+    min-height: 96px;
   }
 
   .diet__link {
     margin-top: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .diet__link::after {
+    right: 0;
   }
 }
 
@@ -189,10 +213,6 @@
     padding-left: 52px;
     padding-right: 52px;
     padding-bottom: 55px;
-  }
-
-  .diet__content {
-    min-height: 263px;
   }
 
   .diet__content::before {
@@ -220,11 +240,16 @@
   .diet__title {
     margin-top: 36px;
     padding-left: 162px;
-    margin-bottom: 77px;
+    margin-bottom: 75px;
   }
 
   .diet__text {
     margin-bottom: 23px;
+    min-height: auto;
+  }
+
+  .diet__item:first-of-type .diet__text,
+  .diet__item:last-of-type .diet__text {
     max-width: 100%;
   }
 }

@@ -64,12 +64,13 @@
 @media (min-width: @tablet-width) {
   .location__info {
     padding: 66px 41px 51px 41px;
+    min-height: 201px;
   }
 
   .location__invite {
     margin: 0;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 1.2em;
     max-width: 175px;
   }
 
@@ -110,20 +111,22 @@
     justify-content: space-between;
     top: 95px;
     left: 110px;
-    min-height: 201px;
     width: 570px;
     background-color: @basic-white;
-    padding: 62px 89px 51px 76px;
+    padding: 68px 89px 51px 76px;
     z-index: 2;
   }
 
   .location__address {
     text-align: start;
+    padding-left: 5px;
+    padding-bottom: 5px;
   }
 
   .location__nav-map::before {
     top: 131px;
-    right: -419px;
+    left: 0;
+    margin-left: 908px;
     bottom: 163px;
   }
 }
