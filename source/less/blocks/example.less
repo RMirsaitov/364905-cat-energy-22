@@ -191,7 +191,20 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    background-image: linear-gradient(180deg, @basic-white, @basic-white 195px, @basic-light-grey 195px, @basic-light-grey), linear-gradient(90deg, @basic-smoky-grey 50%, @basic-smoky-grey 50%);
+    position: relative;
+    background-image: linear-gradient(90deg, @basic-light-grey 50%, @basic-smoky-grey 50%);
+  }
+
+  .example::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 195px;
+    width: 100vw;
+    background-color: @basic-white;
   }
 
   .example .container {
@@ -209,6 +222,7 @@
   .example__heading {
     margin-top: 58px;
     margin-bottom: 146px;
+    z-index: 1;
   }
 
   .example__meaning-text {
