@@ -38,14 +38,16 @@
             alt="Логотип Cat Energy"
           />
         </a>
-        <nav class="menu-nav menu-nav--closed menu-nav--open">
+        <nav class="menu-nav">
           <button
             class="menu-nav__toggle"
             type="button"
-            aria-label="Закрыть меню"
-          ></button>
+            aria-label="Закрыть/открыть меню"
+          >
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
           <ul class="menu-nav__list">
-            <li class="menu-nav__item">
+            <li class="menu-nav__item menu-nav__item--current">
               <a class="menu-nav__link" href="index.html">Главная</a>
             </li>
             <li class="menu-nav__item">
@@ -53,7 +55,7 @@
                 >Каталог продукции</a
               >
             </li>
-            <li class="menu-nav__item menu-nav__item--current">
+            <li class="menu-nav__item">
               <a class="menu-nav__link" href="#">Подбор программы</a>
             </li>
           </ul>
@@ -135,7 +137,6 @@
                   <li class="program-options__item">
                     <input
                       class="program-options__input visually-hidden"
-                      class=""
                       type="radio"
                       id="slim"
                       name="program"

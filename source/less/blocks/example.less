@@ -35,6 +35,10 @@
   color: @special-grey;
 }
 
+.example__story br {
+  display: none;
+}
+
 .example__achievements {
   display: flex;
   justify-content: space-between;
@@ -123,7 +127,11 @@
   .example__story {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
+  }
+
+  .example__story br {
+    display: block;
   }
 
   .example__data {
@@ -171,10 +179,14 @@
     line-height: 20px;
     text-align: right;
   }
-}
 
-.example__cost-text {
-  margin-bottom: 7px;
+  .example__cost-text {
+    margin-bottom: 10px;
+  }
+
+  .example__cost-sum {
+    margin-right: 5px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -211,6 +223,10 @@
 
   .example__story {
     margin-bottom: 69px;
+  }
+
+  .example__story br {
+    display: none;
   }
 
   .example__data {

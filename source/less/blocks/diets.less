@@ -47,7 +47,7 @@
 .diet__content-mass::after {
   background-image: url("../img/vector/icon-cat-mass.svg");
   top: 5px;
-  left: -11px;
+  left: -9px;
   height: 28px;
   width: 67px;
 }
@@ -76,6 +76,9 @@
   border-bottom: 1px solid @content-border-grey;
 }
 
+.diet__text br {
+  display: none;
+}
 
 .diet__link {
   position: relative;
@@ -86,7 +89,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @basic-black;
-  padding-right: 49px;
+  padding-right: 40px;
 }
 
 .diet__link::after {
@@ -129,25 +132,25 @@
 
   .diet__item {
     min-height: 372px;
-    padding-top: 76px;
+    padding-top: 77px;
     padding-left: 52px;
     padding-bottom: 52px;
-    padding-right: 62px;
+    padding-right: 52px;
   }
 
   .diet__item:first-of-type .diet__text {
-    max-width: 64%;
+    max-width: 62%;
   }
 
   .diet__item:last-of-type .diet__text {
-    max-width: 58%;
+    max-width: 60%;
   }
 
   .diet__content::before {
     top: 15px;
     bottom: auto;
     left: auto;
-    right: 0;
+    right: 10px;
     width: 200px;
     height: 200px;
   }
@@ -156,7 +159,7 @@
     top: 4px;
     bottom: auto;
     left: auto;
-    right: 30px;
+    right: 40px;
     width: 140px;
     height: 192px;
   }
@@ -165,7 +168,7 @@
     top: 58px;
     bottom: 124px;
     left: auto;
-    right: -30px;
+    right: -22px;
     width: 268px;
     height: 112px;
   }
@@ -187,10 +190,15 @@
     min-height: 96px;
   }
 
+  .diet__text br {
+    display: block;
+  }
+
   .diet__link {
     margin-top: 0;
     font-size: 20px;
     line-height: 30px;
+    padding-right: 49px;
   }
 
   .diet__link::after {
@@ -211,7 +219,7 @@
   .diet__item {
     padding-top: 41px;
     padding-left: 52px;
-    padding-right: 52px;
+    padding-right: 48px;
     padding-bottom: 55px;
   }
 
@@ -246,6 +254,11 @@
   .diet__text {
     margin-bottom: 23px;
     min-height: auto;
+  }
+
+
+  .diet__text br {
+    display: none;
   }
 
   .diet__item:first-of-type .diet__text,

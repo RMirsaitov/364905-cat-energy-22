@@ -77,8 +77,8 @@
 
 @media (min-width: @tablet-width) {
   .menu-nav {
-    min-width: 440px;
     margin-top: 16px;
+    min-width: 440px;
   }
 
   .menu-nav__toggle {
@@ -115,8 +115,15 @@
 
 @media (min-width: @desktop-width) {
   .menu-nav {
+    max-width: 440px;
     min-width: 480px;
     margin-top: 12px;
+    margin-right: -6.5px;
+  }
+
+  .menu-nav__link {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .page-header--index .menu-nav__link {
