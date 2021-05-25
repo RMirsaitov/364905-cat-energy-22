@@ -4,7 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon-16.png">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="page-body">
   <header class="page-header page-header--index">
@@ -96,7 +101,7 @@
                 <h3 class="diet__title">Набор массы</h3>
                 <p class="diet__text">
                   Заработать авторитет среди дворовых котов и даже собак? Серия Cat
-                  Energy Pro поможет вашему коту нарастить необходимые мышцы!
+                  Energy Pro поможет вашему коту нарастить необходимые&nbsp;мышцы!
                 </p>
                 <a class="diet__link" href="catalog.html">Каталог Pro</a>
               </div>
@@ -202,12 +207,12 @@
                 </div>
               </div>
               <div class="slider__controls">
-                <label for="before" class="slider__label">Было</label>
+                <button class="slider__button" tabindex="0"><span class="slider__button-text">Было</span></button>
                 <div class="slider__scale">
-                  <div class="slider__toggle">
+                  <div class="slider__toggle" tabindex="0">
                   </div>
                 </div>
-                <label for="after" class="slider__label">Стало</label>
+                <label class="slider__button" tabindex="0"><span class="slider__button-text">Стало</span></label>
               </div>
             </div>
         </div>
@@ -246,10 +251,8 @@
     </div>
     <div class="page-footer__social">
       <ul class="page-footer__social-list">
-        <li class="page-footer__social-item page-footer__social-item-vk>
-          <a class="page-footer__social-link"
-            href="https://vk.com/"
-            aria-label="Вконтакте">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="https://vk.com/" aria-label="Вконтакте">
             <svg xmlns="http://www.w3.org/2000/svg" class="page-footer__social-vkontakte" height="13" width="23">
               <use xlink:href="img/sprite.svg#icon-vkontakte"/>
             </svg>
@@ -274,9 +277,6 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="page-footer__social-facebook" height="16" width="19">
               <use xlink:href="img/sprite.svg#icon-facebook"/>
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="page-footer__social-facebook--big-icon" height="15" width="29">
-              <use xlink:href="img/sprite.svg#icon-big-facebook"/>
-            </svg>
           </a>
         </li>
       </ul>
@@ -294,6 +294,5 @@
     </div>
     </div>
   </footer>
-  <script src="js/menu.js"></script>
   </body>
 </html>

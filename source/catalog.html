@@ -4,19 +4,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicons/favicon-16.png" />
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/favicon-180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="page-body">
     <header class="page-header">
       <div class="container page-header__wrapper">
         <a class="page-header__link" href="index.html">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/vector/logo-desktop.svg" />
-            <source media="(min-width: 768px)" srcset="img/vector/logo-tablet.svg" />
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/vector/logo-desktop.svg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/vector/logo-tablet.svg"
+            />
             <img
               class="page-header__logo"
               src="img/vector/logo-mobile.svg"
               alt="Логотип Cat Energy"
+              tabindex="0"
             />
           </picture>
           <img
@@ -25,14 +37,17 @@
             width="101"
             height="18"
             alt="Логотип Cat Energy"
+            tabindex="0"
           />
         </a>
-        <nav class="menu-nav menu-nav--closed menu-nav--open">
+        <nav class="menu-nav">
           <button
             class="menu-nav__toggle"
             type="button"
-            aria-label="Закрыть меню"
-          ></button>
+            aria-label="Закрыть/открыть меню"
+          >
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
           <ul class="menu-nav__list">
             <li class="menu-nav__item">
               <a class="menu-nav__link" href="index.html">Главная</a>
@@ -57,11 +72,17 @@
                 <picture>
                   <source
                     media="(min-width: 1440px)"
-                    srcset="img/products/product-desktop-1@1x.png, img/products/product-desktop-1@2x.png 2x"
+                    srcset="
+                      img/products/product-desktop-1@1x.png,
+                      img/products/product-desktop-1@2x.png 2x
+                    "
                   />
                   <source
                     media="(min-width: 768px)"
-                    srcset="img/products/product-tablet-1@1x.png, img/products/product-tablet-1@2x.png 2x"
+                    srcset="
+                      img/products/product-tablet-1@1x.png,
+                      img/products/product-tablet-1@2x.png 2x
+                    "
                   />
                   <img
                     width="68"
@@ -97,11 +118,17 @@
                 <picture>
                   <source
                     media="(min-width: 1440px)"
-                    srcset="img/products/product-desktop-2@1x.png, img/products/product-desktop-2@2x.png"
+                    srcset="
+                      img/products/product-desktop-2@1x.png,
+                      img/products/product-desktop-2@2x.png
+                    "
                   />
                   <source
                     media="(min-width: 768px)"
-                    srcset="img/products/product-tablet-2@1x.png, img/products/product-tablet-2@2x.png"
+                    srcset="
+                      img/products/product-tablet-2@1x.png,
+                      img/products/product-tablet-2@2x.png
+                    "
                   />
                   <img
                     width="82"
@@ -137,11 +164,17 @@
                 <picture>
                   <source
                     media="(min-width: 1440px)"
-                    srcset="img/products/product-desktop-3@1x.png, img/products/product-desktop-3@2x.png"
+                    srcset="
+                      img/products/product-desktop-3@1x.png,
+                      img/products/product-desktop-3@2x.png
+                    "
                   />
                   <source
                     media="(min-width: 768px)"
-                    srcset="img/products/product-tablet-3@1x.png, img/products/product-tablet-3@2x.png"
+                    srcset="
+                      img/products/product-tablet-3@1x.png,
+                      img/products/product-tablet-3@2x.png
+                    "
                   />
                   <img
                     width="68"
@@ -177,11 +210,17 @@
                 <picture>
                   <source
                     media="(min-width: 1440px)"
-                    srcset="img/products/product-desktop-4@1x.png, img/products/product-desktop-4@2x.png"
+                    srcset="
+                      img/products/product-desktop-4@1x.png,
+                      img/products/product-desktop-4@2x.png
+                    "
                   />
                   <source
                     media="(min-width: 768px)"
-                    srcset="img/products/product-tablet-4@1x.png, img/products/product-tablet-4@2x.png"
+                    srcset="
+                      img/products/product-tablet-4@1x.png,
+                      img/products/product-tablet-4@2x.png
+                    "
                   />
                   <img
                     width="82"
@@ -217,11 +256,17 @@
                 <picture>
                   <source
                     media="(min-width: 1440px)"
-                    srcset="img/products/product-desktop-5@1x.png, img/products/product-desktop-5@2x.png"
+                    srcset="
+                      img/products/product-desktop-5@1x.png,
+                      img/products/product-desktop-5@2x.png
+                    "
                   />
                   <source
                     media="(min-width: 768px)"
-                    srcset="img/products/product-tablet-5@1x.png, img/products/product-tablet-5@2x.png"
+                    srcset="
+                      img/products/product-tablet-5@1x.png,
+                      img/products/product-tablet-5@2x.png
+                    "
                   />
                   <img
                     width="68"
@@ -257,11 +302,17 @@
                 <picture>
                   <source
                     media="(min-width: 1440px)"
-                    srcset="img/products/product-desktop-6@1x.png, img/products/product-desktop-6@2x.png"
+                    srcset="
+                      img/products/product-desktop-6@1x.png,
+                      img/products/product-desktop-6@2x.png
+                    "
                   />
                   <source
                     media="(min-width: 768px)"
-                    srcset="img/products/product-tablet-6@1x.png, img/products/product-tablet-6@2x.png"
+                    srcset="
+                      img/products/product-tablet-6@1x.png,
+                      img/products/product-tablet-6@2x.png
+                    "
                   />
                   <img
                     width="82"
@@ -297,11 +348,17 @@
                 <picture>
                   <source
                     media="(min-width: 1440px)"
-                    srcset="img/products/product-desktop-7@1x.png, img/products/product-desktop-7@2x.png"
+                    srcset="
+                      img/products/product-desktop-7@1x.png,
+                      img/products/product-desktop-7@2x.png
+                    "
                   />
                   <source
                     media="(min-width: 768px)"
-                    srcset="img/products/product-tablet-7@1x.png, img/products/product-tablet-7@2x.png"
+                    srcset="
+                      img/products/product-tablet-7@1x.png,
+                      img/products/product-tablet-7@2x.png
+                    "
                   />
                   <img
                     width="68"
@@ -354,7 +411,7 @@
       <section class="extra-products">
         <div class="container extra-products__wrapper">
           <h2 class="extra-products__title extra-products__subtitle">
-      Дополнительные товары
+            Дополнительные товары
           </h2>
           <div class="extra__products-content">
             <div class="extra-product__list">
@@ -397,7 +454,8 @@
             </div>
             <div class="product-banner">
               <p class="product-banner__text">
-                Закажите все<br> и получите чехол для кота в подарок!
+                Закажите все<br />
+                и получите чехол для кота в подарок!
               </p>
             </div>
           </div>
@@ -407,83 +465,102 @@
         <div class="container">
           <h2 class="visually-hidden">Наше местоположение</h2>
           <div class="location__info">
-              <p class="location__invite">
-                Приглашаем<br> к сотрудничеству дилеров!
-              </p>
-              <address class="location__address">
-                ул. Большая Конюшенная, д. 19/8<br> <span class="location__address-city">Санкт-Петербург</span>
-              </address>
+            <p class="location__invite">
+              Приглашаем<br />
+              к сотрудничеству дилеров!
+            </p>
+            <address class="location__address">
+              ул. Большая Конюшенная, д. 19/8<br />
+              <span class="location__address-city">Санкт-Петербург</span>
+            </address>
           </div>
         </div>
         <div class="location__nav-map">
           <iframe
-          class="location__map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.320858716209077!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616881827009!5m2!1sru!2sru"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
+            class="location__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.320858716209077!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616881827009!5m2!1sru!2sru"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="container page-footer__wrapper">
-    <div class="page-footer__logo">
-      <a
-        class="page-footer__logo-link"
-        href="#"
-      >
-      <img class="page-footer__logo-image" src="img/vector/logo-footer.svg" width="128" height="23" alt="Cat Energy">
-      </a>
-    </div>
-    <div class="page-footer__social">
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item page-footer__social-item-vk>
-          <a class="page-footer__social-link"
-            href="https://vk.com/"
-            aria-label="Вконтакте">
-            <svg xmlns="http://www.w3.org/2000/svg" class="page-footer__social-vkontakte" height="13" width="23">
-              <use xlink:href="img/sprite.svg#icon-vkontakte"/>
-            </svg>
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link" href="#">
+            <img
+              class="page-footer__logo-image"
+              src="img/vector/logo-footer.svg"
+              width="128"
+              height="23"
+              alt="Cat Energy"
+            />
           </a>
-        </li>
-        <li class="page-footer__social-item">
+        </div>
+        <div class="page-footer__social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a
+                class="page-footer__social-link"
+                href="https://vk.com/"
+                aria-label="Вконтакте"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="page-footer__social-vkontakte"
+                  height="13"
+                  width="23"
+                >
+                  <use xlink:href="img/sprite.svg#icon-vkontakte" />
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a
+                class="page-footer__social-link"
+                href="https://www.instagram.com/"
+                aria-label="Instagram"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="page-footer__social-instagram"
+                  height="16"
+                  width="16"
+                >
+                  <use xlink:href="img/sprite.svg#icon-instagram" />
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a
+                class="page-footer__social-link"
+                href="https://www.facebook.com/"
+                aria-label="Facebook"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="page-footer__social-facebook"
+                  height="16"
+                  width="19"
+                >
+                  <use xlink:href="img/sprite.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <span class="page-footer__htmlacademy">HTML Academy</span>
           <a
-            class="page-footer__social-link"
-            href="https://www.instagram.com/"
-            aria-label="Instagram"
-            ><svg xmlns="http://www.w3.org/2000/svg" class="page-footer__social-instagram" height="16" width="16">
-              <use xlink:href="img/sprite.svg#icon-instagram"/>
+            class="page-footer__htmlacademy-link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+          >
+            <svg class="copyright__htmlacademy-logo" width="27" height="34">
+              <use xlink:href="img/sprite.svg#logo-academy" />
             </svg>
           </a>
-        </li>
-        <li class="page-footer__social-item">
-          <a
-            class="page-footer__social-link"
-            href="https://www.facebook.com/"
-            aria-label="Facebook"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" class="page-footer__social-facebook" height="16" width="19">
-              <use xlink:href="img/sprite.svg#icon-facebook"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="page-footer__social-facebook--big-icon" height="15" width="29">
-              <use xlink:href="img/sprite.svg#icon-big-facebook"/>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright">
-      <span class="page-footer__htmlacademy">HTML Academy</span>
-      <a
-        class="page-footer__htmlacademy-link"
-        href="https://htmlacademy.ru/intensive/adaptive"
-      >
-      <svg class="copyright__htmlacademy-logo" width="27" height="34">
-        <use xlink:href="img/sprite.svg#logo-academy"/>
-      </svg>
-      </a>
-    </div>
-    </div>
-  </footer>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
