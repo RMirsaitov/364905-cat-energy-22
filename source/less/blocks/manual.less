@@ -4,7 +4,7 @@
 
 .manual__title {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -31,6 +31,10 @@
   font-size: 14px;
   line-height: 18px;
   color: @special-grey;
+}
+
+.manual__item br {
+  display: none;
 }
 
 .manual__item::before {
@@ -119,6 +123,14 @@
     font-size: 280px;
     line-height: 280px;
     z-index: -1;
+  }
+
+  .manual__item:first-child::after {
+    right: -5px;
+  }
+
+  .manual__item:last-child br {
+    display: block;
   }
 }
 

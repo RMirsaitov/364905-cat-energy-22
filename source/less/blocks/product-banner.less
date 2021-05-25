@@ -13,6 +13,28 @@
   @media @retina {
     background-image: url("../img/raster/banner-background@2x.jpg");
   }
+
+  @media (min-width: @tablet-width) {
+    background-position: center;
+    background-size: cover;
+    max-width: 708px;
+    min-height: 200px;
+    background-image: url("../img/raster/banner-background-tablet@1x.jpg");
+
+    @media (min-width: @tablet-width) and @media @retina {
+      background-image: url("../img/raster/banner-background-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    min-width: 245px;
+    background-image: url("../img/raster/banner-background-desktop@1x.jpg");
+
+    @media @retina {
+      background-image: url("../img/raster/banner-background-desktop@2x.jpg");
+    }
+  }
 }
 
 .product-banner__text {
@@ -43,21 +65,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .product-banner {
-    background-position: center;
-    margin: 0 auto;
-    max-width: 708px;
-    min-height: 200px;
-    background-image: url("../img/raster/banner-background-tablet@1x.jpg");
-    background-color: @basic-green;
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    @media @retina {
-      background-image: url("../img/raster/banner-background-tablet@2x.jpg");
-    }
-  }
-
   .product-banner__text::before {
     top: 50%;
     margin-top: -40px;
@@ -78,20 +85,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .product-banner {
-    margin: 0;
-    min-width: 245px;
-    min-height: 200px;
-    background-image: url("../img/raster/banner-background-desktop@1x.jpg");
-    background-color: @basic-green;
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    @media @retina {
-      background-image: url("../img/raster/banner-background-desktop@2x.jpg");
-    }
-  }
-
   .product-banner__text::before {
     top: 97px;
     left: 50%;
