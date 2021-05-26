@@ -38,9 +38,9 @@
             alt="Логотип Cat Energy"
           />
         </a>
-        <nav class="menu-nav">
+        <nav class="menu-nav menu-nav--closed menu-nav--opened">
           <button
-            class="menu-nav__toggle"
+            class="menu-nav__toggle visually-hidden"
             type="button"
             aria-label="Закрыть/открыть меню"
           >
@@ -96,8 +96,8 @@
       </section>
     </header>
     <main class="page-main">
-      <section class="diets">
-        <div class="container diets__wrapper">
+      <section class="diet">
+        <div class="container diet__wrapper">
           <h2 class="visually-hidden">Диеты</h2>
           <article class="diet__item">
             <div class="diet__content diet__content-slim">
@@ -114,8 +114,8 @@
             <div class="diet__content diet__content-mass">
               <h3 class="diet__title">Набор массы</h3>
               <p class="diet__text">
-                Заработать авторитет среди дворовых котов<br /> и даже собак?
-                Серия Cat Energy Pro поможет вашему коту нарастить
+                Заработать авторитет среди дворовых котов<br />
+                и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
                 необходимые<br />
                 мышцы!
               </p>
@@ -235,15 +235,18 @@
               </div>
             </div>
             <div class="slider__controls">
+              <span class="visually-hidden"
+                >Сравнить результат до и после использования программы</span
+              >
               <button class="slider__button" tabindex="0">
                 <span class="slider__button-text">Было</span>
               </button>
               <div class="slider__scale">
                 <div class="slider__toggle" tabindex="0"></div>
               </div>
-              <label class="slider__button" tabindex="0"
-                ><span class="slider__button-text">Стало</span></label
-              >
+              <button class="slider__button" tabindex="0">
+                <span class="slider__button-text">Стало</span>
+              </button>
             </div>
           </div>
         </div>
@@ -342,7 +345,7 @@
             class="page-footer__htmlacademy-link"
             href="https://htmlacademy.ru/intensive/adaptive"
           >
-            <svg class="copyright__htmlacademy-logo" width="27" height="34">
+            <svg class="page-footer__htmlacademy-logo" width="27" height="34">
               <use xlink:href="img/sprite.svg#logo-academy" />
             </svg>
           </a>

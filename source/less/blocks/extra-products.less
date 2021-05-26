@@ -7,6 +7,7 @@
 .extra-products__title {
   margin: 0;
   margin-bottom: 36px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -28,6 +29,10 @@
   width: 100vw;
   height: 2px;
   background-color: @basic-green;
+}
+
+.extra-products__list {
+  margin-bottom: 39px;
 }
 
 @media (min-width: @tablet-width) {
@@ -55,6 +60,14 @@
     height: 2px;
     background-color: @basic-green;
   }
+
+  .extra-product__list {
+    border-left: 1px solid @basic-dark-grey;
+    border-right: 1px solid @basic-dark-grey;
+    max-width: 708px;
+    margin: 0 auto;
+    margin-bottom: 69px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -67,8 +80,14 @@
     padding-left: 39px;
   }
 
-  .extra__products-content {
+  .extra-products__content {
     display: flex;
     justify-content: space-between;
+  }
+
+  .extra-products__list {
+    border: none;
+    max-width: 895px;
+    margin: 0;
   }
 }
