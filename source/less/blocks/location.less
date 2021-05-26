@@ -32,7 +32,6 @@
 
 .location__nav-map {
   position: relative;
-  min-height: auto;
   width: auto;
 }
 
@@ -40,6 +39,32 @@
   min-height: 362px;
   width: 100%;
   border: none;
+  background-image: url("../img/maps/map-mobile@1x.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/maps/map-mobile@2x.png 2x");
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 400px;
+    width: 100%;
+    background-image: url("../img/maps/map-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/maps/map-tablet@2x.png 2x");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/maps/map-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/maps/map-desktop@2x.png 2x");
+    }
+  }
 }
 
 .location__nav-map::before {
@@ -87,10 +112,6 @@
 
   .location__address .location__address-city {
     margin-top: 10px;
-  }
-
-  .location__map {
-    min-height: 400px;
   }
 
   .location__nav-map::before {

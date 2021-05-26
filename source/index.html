@@ -67,6 +67,29 @@
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture class="promo__product">
             <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                img/raster/product-desktop@1x.webp,
+                img/raster/product-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                img/raster/product-tablet@1x.webp,
+                img/raster/product-tablet@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="
+                img/raster/product-mobile@1x.webp,
+                img/raster/product-mobile@2x.webp 2x
+              "
+            />
+            <source
               media="(min-width: 1440px)"
               srcset="
                 img/raster/product-desktop@1x.png,
@@ -188,6 +211,29 @@
               <div class="slider__item slider__item--before">
                 <picture>
                   <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/raster/fat-cat-desktop@1x.webp,
+                      img/raster/fat-cat-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/raster/fat-cat-tablet@1x.webp,
+                      img/raster/fat-cat-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/raster/fat-cat-mobile@1x.webp,
+                      img/raster/fat-cat-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
                       img/raster/fat-cat-tablet@1x.png,
@@ -211,6 +257,29 @@
               </div>
               <div class="slider__item slider__item--after">
                 <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/raster/slim-cat-desktop@1x.webp,
+                      img/raster/slim-cat-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/raster/slim-cat-tablet@1x.webp,
+                      img/raster/slim-cat-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/raster/slim-cat-mobile@1x.webp,
+                      img/raster/slim-cat-mobile@2x.webp 2x
+                    "
+                  />
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -238,13 +307,21 @@
               <span class="visually-hidden"
                 >Сравнить результат до и после использования программы</span
               >
-              <button class="slider__button" tabindex="0">
+              <button
+                class="slider__button"
+                tabindex="0"
+                aria-label="Посмотреть результат до"
+              >
                 <span class="slider__button-text">Было</span>
               </button>
               <div class="slider__scale">
                 <div class="slider__toggle" tabindex="0"></div>
               </div>
-              <button class="slider__button" tabindex="0">
+              <button
+                class="slider__button"
+                tabindex="0"
+                aria-label="Посмотреть результат после"
+              >
                 <span class="slider__button-text">Стало</span>
               </button>
             </div>
@@ -291,6 +368,9 @@
         <div class="page-footer__social">
           <ul class="page-footer__social-list">
             <li class="page-footer__social-item">
+              <span class="visually-hidden"
+                >Ссылка на страницу в Вконтакте</span
+              >
               <a
                 class="page-footer__social-link"
                 href="https://vk.com/"
@@ -307,6 +387,9 @@
               </a>
             </li>
             <li class="page-footer__social-item">
+              <span class="visually-hidden"
+                >Ссылка на страницу в Instagram</span
+              >
               <a
                 class="page-footer__social-link"
                 href="https://www.instagram.com/"
@@ -322,6 +405,7 @@
               </a>
             </li>
             <li class="page-footer__social-item">
+              <span class="visually-hidden">Ссылка на страницу в Facebook</span>
               <a
                 class="page-footer__social-link"
                 href="https://www.facebook.com/"
